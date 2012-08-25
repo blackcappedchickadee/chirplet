@@ -24,7 +24,16 @@ privileged aspect NestDataOnDemand_Roo_DataOnDemand {
     
     public Nest NestDataOnDemand.getNewTransientNest(int index) {
         Nest obj = new Nest();
+        setContents(obj, index);
         return obj;
+    }
+    
+    public void NestDataOnDemand.setContents(Nest obj, int index) {
+        String contents = "contents_" + index;
+        if (contents.length() > 100) {
+            contents = contents.substring(0, 100);
+        }
+        obj.setContents(contents);
     }
     
     public Nest NestDataOnDemand.getSpecificNest(int index) {
