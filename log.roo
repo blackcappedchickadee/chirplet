@@ -17,3 +17,5 @@ jpa setup --database MYSQL --provider HIBERNATE --databaseName chirplet --userNa
 entity jpa --class ~.model.Nest --testAutomatically
 field string --fieldName contents --notNull --sizeMax 100
 field boolean --fieldName stillThere --value true
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-25 17:03:16
