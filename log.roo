@@ -10,3 +10,7 @@ exit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-25 16:38:10
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-25 16:39:27
 logging setup --level WARN 
+// [failed] jpa setup --database MYSQL --provider HIBERNATE --databaseName chirplet --userName chirplet --password chirplet 
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-25 16:53:49
+// [failed] jpa setup --database MYSQL --provider HIBERNATE --databaseName chirplet --userName chirplet --password chirplet
+jpa setup --database MYSQL --provider HIBERNATE --databaseName chirplet --userName chirplet --password chirplet
