@@ -16,3 +16,4 @@ logging setup --level WARN
 jpa setup --database MYSQL --provider HIBERNATE --databaseName chirplet --userName chirplet --password chirplet
 entity jpa --class ~.model.Nest --testAutomatically
 field string --fieldName contents --notNull --sizeMax 100
+field boolean --fieldName stillThere --value true

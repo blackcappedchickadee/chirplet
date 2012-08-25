@@ -15,4 +15,12 @@ privileged aspect Nest_Roo_JavaBean {
         this.contents = contents;
     }
     
+    public Boolean Nest.getStillThere() {
+        return this.stillThere;
+    }
+    
+    public void Nest.setStillThere(Boolean stillThere) {
+        this.stillThere = stillThere;
+    }
+    
 }

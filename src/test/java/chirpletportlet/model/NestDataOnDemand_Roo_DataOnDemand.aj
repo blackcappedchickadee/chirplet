@@ -25,6 +25,7 @@ privileged aspect NestDataOnDemand_Roo_DataOnDemand {
     public Nest NestDataOnDemand.getNewTransientNest(int index) {
         Nest obj = new Nest();
         setContents(obj, index);
+        setStillThere(obj, index);
         return obj;
     }
     
@@ -34,6 +35,11 @@ privileged aspect NestDataOnDemand_Roo_DataOnDemand {
             contents = contents.substring(0, 100);
         }
         obj.setContents(contents);
+    }
+    
+    public void NestDataOnDemand.setStillThere(Nest obj, int index) {
+        Boolean stillThere = Boolean.TRUE;
+        obj.setStillThere(stillThere);
     }
     
     public Nest NestDataOnDemand.getSpecificNest(int index) {
