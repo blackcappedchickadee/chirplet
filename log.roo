@@ -14,3 +14,4 @@ logging setup --level WARN
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-25 16:53:49
 // [failed] jpa setup --database MYSQL --provider HIBERNATE --databaseName chirplet --userName chirplet --password chirplet
 jpa setup --database MYSQL --provider HIBERNATE --databaseName chirplet --userName chirplet --password chirplet
+entity jpa --class ~.model.Nest --testAutomatically
